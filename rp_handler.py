@@ -16,6 +16,7 @@ from rp_utils import (
 )
 
 # Initialize the workflow once at startup
+print('clone successful')
 print("Initializing WanVideoMultiTalk workflow...")
 init_start_time = time.time()
 workflow = WanVideoMultiTalk()
