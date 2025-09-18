@@ -5,7 +5,7 @@ import os
 import shutil
 import glob
 import traceback
-from workflow import WanVideoMultiTalk
+from workflow import WanVideoInfiniteTalk
 import runpod
 from rp_utils import (
     process_input_image,
@@ -19,7 +19,7 @@ from rp_utils import (
 print('clone successful')
 print("Initializing WanVideoMultiTalk workflow...")
 init_start_time = time.time()
-workflow = WanVideoMultiTalk()
+workflow = WanVideoInfiniteTalk()
 init_end_time = time.time()
 init_time = init_end_time - init_start_time
 print(f"Workflow initialization time: {init_time:.2f} seconds")
